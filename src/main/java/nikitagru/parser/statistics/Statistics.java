@@ -1,4 +1,4 @@
-package nikitagru.parser;
+package nikitagru.parser.statistics;
 
 import java.util.HashMap;
 import java.util.regex.Matcher;
@@ -26,7 +26,6 @@ public class Statistics {
 
     private String[] deleteSymbols(String[] words) {
         Pattern pattern = Pattern.compile("[a-zA-Zа-яА-Я]+");
-
 
         for (int i = 0; i < words.length; i++) {
             Matcher matcher = pattern.matcher(words[i]);
