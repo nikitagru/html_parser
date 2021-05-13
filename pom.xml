@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>nikitagru</groupId>
 	<artifactId>parser</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>htmlparser</name>
 	<description>HTML parser</description>
 	<properties>
