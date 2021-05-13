@@ -15,7 +15,7 @@ public class HtmlparserApplication {
 	public static void main(String[] args) throws IOException {
 		SpringApplication.run(HtmlparserApplication.class, args);
 
-		Parser parser = new Parser("https://ru.wikipedia.org/wiki/Самолёт");
+		Parser parser = new Parser(args[0]);		// if application start from IDE you must change args[0] to your URL
 		String[] words = parser.parse();
 
 		if (words != null) {
