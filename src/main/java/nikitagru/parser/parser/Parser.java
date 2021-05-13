@@ -6,7 +6,9 @@ import org.jsoup.nodes.DocumentType;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+import java.io.File;
 import java.io.IOException;
+import java.net.URL;
 import java.net.UnknownHostException;
 import java.util.ArrayList;
 import java.util.List;
@@ -24,7 +26,8 @@ public class Parser {
     private String url;
 
     private Logger logger = Logger.getLogger("ErrorLog");
-    private FileHandler handler = new FileHandler("log/ErrorLogFile.log");
+    private String appPath = new File(".").getCanonicalPath();
+    private FileHandler handler = new FileHandler(appPath + "/log/ErrorLogFile.log");
 
 
     public Parser(String url) throws IOException {
